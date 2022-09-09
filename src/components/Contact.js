@@ -40,16 +40,16 @@ export default function Contact() {
                     <p>203, Evanto Labs, Behind Alis Street , Australia</p>
                 </div>
                 <div className="info">
-                    <a href='#'>
+                    <a href='https://www.google.fr/'>
                         <AiFillFacebook size={'2rem'} className='ion-icon'/>
                     </a>
-                    <a href='#'>
+                    <a href='https://www.google.fr/'>
                         <AiFillInstagram size={'2rem'} className='ion-icon'/>
                     </a>
-                    <a href='#'>
+                    <a href='https://www.google.fr/'>
                         <AiFillTwitterCircle size={'2rem'} className='ion-icon'/>
                     </a>
-                    <a href='#'>
+                    <a href='https://www.google.fr/'>
                         <AiFillYoutube size={'2rem'} className='ion-icon'/>
                     </a>
                 </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                     value={Feedback.name}
                     onChange={(e) => setFeedback({...Feedback, name: e.target.value})}
                     />
-                    <label for="name"> Enter your name</label>
+                    <label htmlFor="name"> Enter your name</label>
                 </div>
                 <div className="input-container">
                     <input
@@ -78,7 +78,7 @@ export default function Contact() {
                     value={Feedback.email}
                     onChange={(e) => setFeedback({...Feedback, email: e.target.value})}
                     />
-                    <label for="email"> Enter a valid email adress</label>
+                    <label htmlFor="email"> Enter a valid email adress</label>
                 </div>
                 <div className="input-container msg-container">
                     <textarea
@@ -89,7 +89,7 @@ export default function Contact() {
                     value={Feedback.msg}
                     onChange={(e) => setFeedback({...Feedback, msg: e.target.value})}
                     ></textarea>
-                    <label for="comment" className="msg-label"> Enter your message</label>
+                    <label htmlFor="comment" className="msg-label"> Enter your message</label>
                 </div>
                 <input
                     type="submit"
