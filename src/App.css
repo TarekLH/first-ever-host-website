@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+/* Universal  */
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: black;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body > * + * {
+  margin: 0 5vw;
+}
+#root {
+  margin: 0;
+}
+
+
+/* media queries  */
+@media screen and (max-width: 900px) {
+  html {
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  nav .logo,
+  .socialMedia-list,
+  #menu-icon {
+    margin: 0.5rem;
+  }
+  #menu-icon {
+    order: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+button {
+  display: inline-flex;
+  height: 3.5rem;
+  width: auto;
+  padding: 0 2rem;
+  border-radius: 7px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  outline: none;
+  border: none;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button ion-icon {
+  padding: 0 5px;
+  font-size: 22px;
+}
+.grey-btn {
+  background-color: rgb(235, 233, 233);
+  border: 1px solid rgb(235, 233, 233);
+  color: rgb(78, 78, 78);
+  transition: 0.5s;
+}
+.grey-btn:hover {
+  background-color: rgb(136, 136, 136);
+  color: rgb(235, 233, 233);
+  border: 1px solid rgb(235, 233, 233);
+}
+
+.green-btn {
   color: white;
+  background-color: #359756;
+  border: 1px solid #359756;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.green-btn:hover {
+  background-color: white;
+  color: #359756;
+  border: 1px solid #359756;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-container {
+  margin-right: 1rem;
+}
+.btns {
+  display: flex;
+}
+
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .heroSection,
+  .section,
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  aside {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+  aside img {
+    width: 90%;
+  }
+  .section-content {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1,
+  p {
+    margin: auto;
+    text-align: center;
+  }
+  .btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services h1,
+  .services p {
+    text-align: start;
+    margin: 0;
+  }
+  .services button {
+    display: block;
+    margin: 0;
+  }
+
+  .services .offers,
+  section .users {
+    width: 100%;
+    grid-template-columns: 70%;
+  }
+  .offers h1,
+  .offers p {
+    text-align: center;
+  }
+  .feedback h2 {
+    max-width: 40ch;
+  }
+  .feedback h1 {
+    font-size: 30px;
+  }
+  footer,
+  footer .container {
+    width: 100%;
+    padding: 5rem;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .contact-info .info {
+    width: 100%;
+  }
+  .info p {
+    margin: 0;
+    text-align: start;
+  }
+  .form {
+    width: 100%;
+    padding: 8px 0;
+    margin: 0;
+  }
+
+  .btn-container {
+    margin-bottom: 10px;
   }
 }

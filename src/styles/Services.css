@@ -1,0 +1,51 @@
+.services {
+    background-color: rgb(235, 233, 233);
+    margin: 0;
+  }
+  
+  .services > .offers {
+    height: auto;
+    width: 50%;
+    display: grid;
+    grid-template: minmax(20rem, 1fr) minmax(20rem, 1fr) / 40% 40%;
+    gap: 20px;
+    padding: 40px 0;
+    justify-content: center;
+  }
+  
+  .offer {
+    padding: 2rem;
+    border-radius: 7px;
+    background-color: white;
+    line-height: 2.2;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .offer:hover {
+    box-shadow: 0 0 20px rgba(180, 180, 180, 0.5);
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  .offer h1 {
+    font-size: 1.5rem;
+    color: #359756;
+  }
+  .offer h2 {
+    font-size: 1.2rem;
+    text-decoration: underline #359756;
+    letter-spacing: 1px;
+  }
+  
+  .offer p {
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .offer .ion-icon {
+    font-size: 70px;
+    color: #359756;
+    display: inline-block;
+    background-color: #75e09950;
+    padding: 1rem;
+    border-radius: 50%;
+  }

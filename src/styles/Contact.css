@@ -1,0 +1,114 @@
+footer {
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(235, 233, 233);
+    padding: 6rem 10rem;
+  }
+  
+  footer .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  footer .ion-icon {
+    color: #359756;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 8px 0;
+  }
+  
+  .contact-info .info {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    width: 300px;
+  }
+  .contact-info .info .ion-icon {
+    margin-right: 8px;
+    align-self: flex-start;
+  }
+  
+  .form {
+    width: 600px;
+    padding: 8px 3rem;
+    margin-left: 0 2rem;
+  }
+  
+  .form .field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(235, 233, 233);
+    outline: none;
+    border: none;
+  }
+  
+  input[type="submit"].field {
+    border: 2px solid #359756;
+    color: #359756;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  input[type="submit"].field:hover {
+    border: 2px solid #359756;
+    background: #359756;
+    color: white;
+  }
+
+/* animation for the form  */
+.form .field {
+    margin-bottom: 1em;
+    transition: all 0.3s;
+  }
+  
+  label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    transform: translateY(-40px);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    padding-left: 10px;
+  }
+  
+  .msg-label {
+    transform: translateY(-160px);
+    transform-origin: 0 0;
+  }
+  
+  .field::placeholder {
+    color: transparent;
+  }
+  
+  .field:focus + label,
+  .field:not(:placeholder-shown) + label {
+    transform: translateY(-70.4px) scale(0.8);
+  }
+  
+  .field:focus + .msg-label,
+  .field:not(:placeholder-shown) + .msg-label {
+    transform: translateY(-190px) scale(0.8);
+  }
+  
+  .field:focus {
+    border: 1px solid #359756;
+  }
+  .input-container:focus-within {
+    transform: scale(1.01, 1.01);
+  }
+  
+
+  /* error indication  */
+.form .field.error {
+    border: 1px red solid;
+  }

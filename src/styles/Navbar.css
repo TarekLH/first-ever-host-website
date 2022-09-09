@@ -1,0 +1,66 @@
+/* NavBar style  */
+nav .navbar {
+    height: min-content;
+    display: flex;
+    padding: 0.5rem 0;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 80vw;
+    margin: 0 5vw;
+  }
+  nav .navbar .logo {
+    margin-right: auto;
+    padding: 0 2rem;
+  }
+  
+  nav .navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 0.1rem;
+  }
+  
+  nav .nabvar #menu-icon {
+    padding: 0 0.5rem;
+    font-size: 32px;
+  }
+  .socialMedia-list ion-icon {
+    transition: 0.3s;
+    padding: 0 5px;
+  }
+  .socialMedia-list :nth-child(1) ion-icon:hover {
+    color: #4267b2;
+    cursor: pointer;
+  }
+  .socialMedia-list :nth-child(2) ion-icon:hover {
+    color: #1da1f2;
+    cursor: pointer;
+  }
+  .socialMedia-list :nth-child(3) ion-icon:hover {
+    color: #e1306c;
+    cursor: pointer;
+  }
+  
+  .btn-no-styiling {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .border-bottom-2 {
+    border-bottom: 2px solid black;
+  }
+  .p-20 {
+    padding: 20px;
+  }
+  .p-0 {
+    padding: 0;
+  }
