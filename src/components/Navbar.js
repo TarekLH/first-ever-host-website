@@ -17,13 +17,13 @@ export default function Navbar() {
 
             <ul className="socialMedia-list">
                 <li>
-                <a href="#"><AiFillFacebook size={"2rem"}/></a>
+                <a href="https://www.google.fr/"><AiFillFacebook size={"2rem"}/></a>
                 </li>
                 <li>
-                <a href="#"><AiFillTwitterSquare size={"2rem"}/></a>
+                <a href="https://www.google.fr/"><AiFillTwitterSquare size={"2rem"}/></a>
                 </li>
                 <li>
-                <a href="#"><AiFillInstagram size={"2rem"}/></a>
+                <a href="https://www.google.fr/"><AiFillInstagram size={"2rem"}/></a>
                 </li>
             </ul>
             <button className='btn-no-styiling' onClick={handleClick}>
@@ -33,10 +33,10 @@ export default function Navbar() {
         {
             Activate ?
             <div className="bg-white text-center border-bottom-2 p-0">
-                <a href="#" className="display-block p-20">About</a>
-                <a href="#" className="display-block p-20">Services</a>
-                <a href="#" className="display-block p-20">Support</a>
-                <a href="#" className="display-block p-20">Contact</a>
+                <a href="https://www.google.fr/" className="display-block p-20">About</a>
+                <a href="https://www.google.fr/" className="display-block p-20">Services</a>
+                <a href="https://www.google.fr/" className="display-block p-20">Support</a>
+                <a href="https://www.google.fr/" className="display-block p-20">Contact</a>
             </div>
                 :
             <></>
